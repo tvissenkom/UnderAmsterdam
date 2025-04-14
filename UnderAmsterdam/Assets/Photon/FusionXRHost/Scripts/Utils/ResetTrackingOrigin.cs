@@ -79,7 +79,7 @@ namespace Fusion.XR.Host.Utils
         private void FixfloorOrigin()
         {
             List<XRInputSubsystem> inputSubsystems = new List<XRInputSubsystem>();
-            SubsystemManager.GetInstances<XRInputSubsystem>(inputSubsystems);
+            SubsystemManager.GetSubsystems<XRInputSubsystem>(inputSubsystems);
             foreach (var inputSubsystem in inputSubsystems)
             {
                 // change the tracking oroigin to set it to floor

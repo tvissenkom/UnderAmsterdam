@@ -64,9 +64,9 @@ public class PlayerTestMove : MonoBehaviour, INetworkRunnerCallbacks
         }
         
         if (mainRigid != null && Gamemanager.Instance.ConnectionManager.runner != null && _inputReceived)
-            mainRigid.velocity = (direction * Gamemanager.Instance.ConnectionManager.runner.DeltaTime * speed);
+            mainRigid.linearVelocity = (direction * Gamemanager.Instance.ConnectionManager.runner.DeltaTime * speed);
         else if (mainRigid != null)
-            mainRigid.velocity = (direction * Time.fixedDeltaTime * speed);
+            mainRigid.linearVelocity = (direction * Time.fixedDeltaTime * speed);
     }
 
     public void OnObjectExitAOI(NetworkRunner runner, NetworkObject obj, PlayerRef player)
