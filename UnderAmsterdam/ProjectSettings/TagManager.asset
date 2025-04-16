@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 2
+  serializedVersion: 3
   tags:
   - LeftHand
   - RightHand
@@ -14,6 +14,11 @@ TagManager:
   - misc
   - Teamwork
   - LP
+  - Projectile
+  - Destroyer
+  - Target
+  - Anchor
+  - PlayerHand
   layers:
   - Default
   - TransparentFX
@@ -31,8 +36,8 @@ TagManager:
   - Keyboard
   - root
   - Teamwork
-  - 
-  - 
+  - Player
+  - Mirror
   - 
   - 
   - 
@@ -51,3 +56,5 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  m_RenderingLayers:
+  - Default
